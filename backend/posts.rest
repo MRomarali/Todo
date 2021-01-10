@@ -1,0 +1,24 @@
+GET http://localhost:4000/posts
+###
+
+GET http://localhost:4000/posts/5eb92804b5d39ea09c00e59dc
+###
+
+POST http://localhost:4000/posts/
+Content-Type: application/json
+
+{
+    "title": "Fan vad skoj det är med backend",
+    "text": "Känner att jag börjar få kläm på det med :)"
+}
+###
+
+DELETE http://localhost:4000/posts/5eb986f2faa10f0aa4e71de7
+###
+
+PATCH http://localhost:4000/posts/5eb97d268fb0f32220fde3be
+Content-Type: application/json
+
+{
+    "title": "Arne Weisse satt i ett träd"
+}

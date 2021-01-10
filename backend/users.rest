@@ -1,0 +1,25 @@
+GET http://localhost:4000/users
+###
+
+GET http://localhost:4000/users/5eb8fcfa1dc2d021687c2658
+###
+
+POST http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "work": "ahmed",
+    "email": "ahmed@gmail.com",
+    "address": {
+        "city": "Lessebo",
+        "street": "Sulubstreet",
+        "zipcode": "Sulubsson"
+    }
+}
+###
+
+DELETE http://localhost:4000/users/5ebe43d620c05b15bcd51d06
+###
+
+PATCH http://localhost:4000/users/5eb8fcfa1dc2d021687c2658
+Content-Type: application/json
